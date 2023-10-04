@@ -5,8 +5,8 @@ platform :ios, '13.0'
 
 target 'AdCashExample' do
   # Comment the next line if you don't want to use dynamic frameworks
-  pod 'AvatyeAdCash', '~> 1.0.1'
-  pod 'AvatyeAdCash/Ads', '~> 1.0.1'
+  pod 'AvatyeAdCash', '~> 1.0.4'
+  pod 'AvatyeAdCash/Ads', '~> 1.0.4'
 
   # Pods for AdCashExample
 

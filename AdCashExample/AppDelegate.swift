@@ -17,8 +17,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
         
-        // !-- AdCash 초기화 --!
+        // MARK: AdCash 초기화
+        /// 현재 appID와 appSecretKey는 테스트용입니다. 라이브시에는 **반드시** 새로 발급받아야 합니다.
         AdCashInit(appId: "0ff121d0b7b24d04b27b0efa9d162656", appSecretKey: "9f30be8f57b34e44")
+        /// iOS14이상에서는 광고추적동의 팝업 노출이 필요합니다.
+        AdCashInit.trackSetting()
         
         
         return true
