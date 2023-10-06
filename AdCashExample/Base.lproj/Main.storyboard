@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yjG-or-B7d">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yjG-or-B7d">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -14,7 +14,7 @@
             <objects>
                 <navigationController id="yjG-or-B7d" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="Z0t-41-8dQ">
-                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
@@ -30,11 +30,11 @@
             <objects>
                 <viewController id="a8w-Rb-TYi" customClass="ViewController" customModule="AdCashExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eyw-pS-xei">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="XXl-gE-Yci">
-                                <rect key="frame" x="46.666666666666657" y="303.66666666666669" width="300" height="245.00000000000006"/>
+                                <rect key="frame" x="37.5" y="211" width="300" height="245"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HUy-MY-kAm">
                                         <rect key="frame" x="0.0" y="0.0" width="300" height="50"/>
@@ -50,7 +50,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CvE-Uv-dgq">
-                                                <rect key="frame" x="210.00000000000003" y="5" width="79.999999999999972" height="40"/>
+                                                <rect key="frame" x="210" y="5" width="80" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="dRz-pD-Hc3"/>
                                                 </constraints>
@@ -86,7 +86,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GtK-04-w6z">
-                                                <rect key="frame" x="210.00000000000003" y="5" width="79.999999999999972" height="40"/>
+                                                <rect key="frame" x="210" y="5" width="80" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="mWX-m2-AxI"/>
                                                 </constraints>
@@ -122,7 +122,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="De6-H9-X0F">
-                                                <rect key="frame" x="210.00000000000003" y="5" width="79.999999999999972" height="40"/>
+                                                <rect key="frame" x="210" y="5" width="80" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="UBr-cl-dDe"/>
                                                 </constraints>
@@ -158,7 +158,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rZW-iS-vHF">
-                                                <rect key="frame" x="210.00000000000003" y="5" width="79.999999999999972" height="40"/>
+                                                <rect key="frame" x="210" y="5" width="80" height="40"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" constant="40" id="b6Y-q4-mZE"/>
                                                 </constraints>
@@ -202,20 +202,25 @@
             <objects>
                 <viewController id="27o-L4-aTR" customClass="BannerAdViewController" customModule="AdCashExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="br2-gm-FEr">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdg-E5-WqF" customClass="BannerAdView" customModule="AvatyeAdCash">
-                                <rect key="frame" x="36.666666666666657" y="401" width="320" height="50"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" priority="750" constant="320" id="8dj-gA-o3L"/>
-                                    <constraint firstAttribute="height" priority="750" constant="50" id="zoc-gw-q4h"/>
-                                </constraints>
-                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R9g-Bo-X1a" userLabel="Container View">
-                                <rect key="frame" x="21.666666666666657" y="351" width="350" height="150"/>
+                                <rect key="frame" x="12.5" y="258.5" width="350" height="150"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdg-E5-WqF" customClass="BannerAdView" customModule="AvatyeAdCash">
+                                        <rect key="frame" x="15" y="50" width="320" height="50"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" priority="750" constant="320" id="8dj-gA-o3L"/>
+                                            <constraint firstAttribute="height" priority="750" constant="50" id="zoc-gw-q4h"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
+                                    <constraint firstItem="bdg-E5-WqF" firstAttribute="centerX" secondItem="R9g-Bo-X1a" secondAttribute="centerX" id="3vL-7y-GtX"/>
+                                    <constraint firstItem="bdg-E5-WqF" firstAttribute="centerY" secondItem="R9g-Bo-X1a" secondAttribute="centerY" id="EhU-Sh-UeI"/>
                                     <constraint firstAttribute="width" constant="350" id="HJq-dA-0I3"/>
                                     <constraint firstAttribute="height" constant="150" id="aHx-rc-LH8"/>
                                 </constraints>
@@ -224,8 +229,6 @@
                         <viewLayoutGuide key="safeArea" id="yaO-ei-aE8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="bdg-E5-WqF" firstAttribute="centerX" secondItem="yaO-ei-aE8" secondAttribute="centerX" id="QCs-QE-l0k"/>
-                            <constraint firstItem="bdg-E5-WqF" firstAttribute="centerY" secondItem="br2-gm-FEr" secondAttribute="centerY" id="aIh-jK-awV"/>
                             <constraint firstItem="R9g-Bo-X1a" firstAttribute="centerX" secondItem="yaO-ei-aE8" secondAttribute="centerX" id="hqs-FL-kE1"/>
                             <constraint firstItem="R9g-Bo-X1a" firstAttribute="centerY" secondItem="br2-gm-FEr" secondAttribute="centerY" id="sa2-su-Dc8"/>
                         </constraints>
@@ -244,14 +247,14 @@
             <objects>
                 <viewController storyboardIdentifier="NativeAdStoryBoard" id="r12-cS-RUz" customClass="NativeAdViewController" customModule="AdCashExample" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nfo-h1-nQy">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gSh-1c-hck" userLabel="NativeAdContainer" customClass="AdCashDefault" customModule="AvatyeAdCash">
-                                <rect key="frame" x="26" y="113" width="341" height="447"/>
+                                <rect key="frame" x="26" y="74" width="323" height="335"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GU4-Vi-yLx" userLabel="NativeAdAdaptor" customClass="AdPopAdapter" customModule="AvatyeAdCash">
-                                        <rect key="frame" x="10" y="10" width="321" height="427"/>
+                                        <rect key="frame" x="10" y="10" width="303" height="315"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yme-eB-BFi" userLabel="icon">
                                                 <rect key="frame" x="10" y="10" width="50" height="50"/>
@@ -267,7 +270,7 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wej-eZ-02U" userLabel="mainImage">
-                                                <rect key="frame" x="10" y="132" width="301" height="180"/>
+                                                <rect key="frame" x="10" y="132" width="283" height="180"/>
                                                 <constraints>
                                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="180" id="1OS-bY-JpY"/>
                                                     <constraint firstAttribute="height" constant="180" id="cKF-nh-wv3"/>
@@ -331,7 +334,7 @@
             <objects>
                 <viewController id="Lga-wf-0b5" customClass="InterstitialAdViewController" customModule="AdCashExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Euk-GW-bgw">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="s0h-op-bSc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -347,11 +350,11 @@
             <objects>
                 <viewController id="QNP-hy-rCd" customClass="BannerLoaderViewController" customModule="AdCashExample" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="LHx-VX-rv1">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yo2-3N-qlD">
-                                <rect key="frame" x="21.666666666666657" y="276" width="350" height="300"/>
+                                <rect key="frame" x="12.5" y="183.5" width="350" height="300"/>
                                 <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="906-eS-Eyx"/>

@@ -14,7 +14,7 @@ class InterstitialAdViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.interAdView = InterstitialAdLoader(placementId: "fd5ce473-d3bb-4f10-818d-775cec39302a")
+        self.interAdView = InterstitialAdLoader(placementId: "6025eb28-3283-4689-8fbc-3fb7a6fe8ed1")
         
         addChild(self.interAdView)
         
