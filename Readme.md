@@ -9,7 +9,7 @@ AdCash(iOS) 연동을 위한 샘플 프로젝트 입니다.
 - Apple Silicon M2
 
 ## 연동 가이드 문서
-[AdCash(iOS) 연동가이드](https://avatye.readme.io/docs/adcash-ios-init)
+[AdCash(iOS) 연동가이드](https://avatye.notion.site/iOS-Native-SDK-c6b5752f2dc041d684f061a71c1711b3)
 
 ## 문의
 [아바티 개발팀](mailto:developer@avatye.com)
