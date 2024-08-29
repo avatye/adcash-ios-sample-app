@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0BBD84AD2C801CBC005C7944 /* GADNativeAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BBD84842C801CBC005C7944 /* GADNativeAdView.xib */; };
+		0BBD84AE2C801CBC005C7944 /* AdMobAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBD84872C801CBC005C7944 /* AdMobAdapter.m */; };
+		0BBD84AF2C801CBC005C7944 /* AppLovinAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBD848A2C801CBC005C7944 /* AppLovinAdapter.m */; };
+		0BBD84B02C801CBC005C7944 /* Cauly.xcframework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0BBD84932C801CBC005C7944 /* Cauly.xcframework */; };
+		0BBD84B12C801CBC005C7944 /* CaulyAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBD84962C801CBC005C7944 /* CaulyAdapter.m */; };
+		0BBD84B22C801CBC005C7944 /* FANAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBD84992C801CBC005C7944 /* FANAdapter.m */; };
+		0BBD84B32C801CBC005C7944 /* MintegralAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBD849C2C801CBC005C7944 /* MintegralAdapter.m */; };
+		0BBD84B42C801CBD005C7944 /* GFPNativeSimpleAdView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0BBD849E2C801CBC005C7944 /* GFPNativeSimpleAdView.xib */; };
+		0BBD84B52C801CBD005C7944 /* NAMAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBD84A12C801CBC005C7944 /* NAMAdapter.m */; };
+		0BBD84B62C801CBD005C7944 /* PangleAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBD84A42C801CBC005C7944 /* PangleAdapter.m */; };
+		0BBD84B72C801CBD005C7944 /* UnityAdsAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBD84A72C801CBC005C7944 /* UnityAdsAdapter.m */; };
+		0BBD84B82C801CBD005C7944 /* VungleAdapter.m in Sources */ = {isa = PBXBuildFile; fileRef = 0BBD84AA2C801CBC005C7944 /* VungleAdapter.m */; };
 		87D936EF146F1567D7B85B50 /* libPods-AdCashExampleTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A52639B4D3485B460E0C2D8F /* libPods-AdCashExampleTests.a */; };
 		886D5B644210626C1E77EF35 /* libPods-AdCashExample-AdCashExampleUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F058E9BA727A042AAC81BD7 /* libPods-AdCashExample-AdCashExampleUITests.a */; };
 		BEDEC0973EEB4CB276608A5C /* libPods-AdCashExample.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 6F68E67B3B2B253ADFB77B62 /* libPods-AdCashExample.a */; };
@@ -43,6 +55,33 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0BBD84842C801CBC005C7944 /* GADNativeAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GADNativeAdView.xib; sourceTree = "<group>"; };
+		0BBD84862C801CBC005C7944 /* AdMobAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdMobAdapter.h; sourceTree = "<group>"; };
+		0BBD84872C801CBC005C7944 /* AdMobAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdMobAdapter.m; sourceTree = "<group>"; };
+		0BBD84892C801CBC005C7944 /* AppLovinAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppLovinAdapter.h; sourceTree = "<group>"; };
+		0BBD848A2C801CBC005C7944 /* AppLovinAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppLovinAdapter.m; sourceTree = "<group>"; };
+		0BBD848C2C801CBC005C7944 /* Cauly.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Cauly.h; sourceTree = "<group>"; };
+		0BBD848D2C801CBC005C7944 /* CaulyAdSetting.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaulyAdSetting.h; sourceTree = "<group>"; };
+		0BBD848E2C801CBC005C7944 /* CaulyAdView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaulyAdView.h; sourceTree = "<group>"; };
+		0BBD848F2C801CBC005C7944 /* CaulyInterstitialAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaulyInterstitialAd.h; sourceTree = "<group>"; };
+		0BBD84902C801CBC005C7944 /* CaulyNativeAd.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaulyNativeAd.h; sourceTree = "<group>"; };
+		0BBD84912C801CBC005C7944 /* CaulyNativeAdItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaulyNativeAdItem.h; sourceTree = "<group>"; };
+		0BBD84932C801CBC005C7944 /* Cauly.xcframework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcframework; path = Cauly.xcframework; sourceTree = "<group>"; };
+		0BBD84952C801CBC005C7944 /* CaulyAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaulyAdapter.h; sourceTree = "<group>"; };
+		0BBD84962C801CBC005C7944 /* CaulyAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CaulyAdapter.m; sourceTree = "<group>"; };
+		0BBD84982C801CBC005C7944 /* FANAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FANAdapter.h; sourceTree = "<group>"; };
+		0BBD84992C801CBC005C7944 /* FANAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FANAdapter.m; sourceTree = "<group>"; };
+		0BBD849B2C801CBC005C7944 /* MintegralAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MintegralAdapter.h; sourceTree = "<group>"; };
+		0BBD849C2C801CBC005C7944 /* MintegralAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MintegralAdapter.m; sourceTree = "<group>"; };
+		0BBD849E2C801CBC005C7944 /* GFPNativeSimpleAdView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GFPNativeSimpleAdView.xib; sourceTree = "<group>"; };
+		0BBD84A02C801CBC005C7944 /* NAMAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NAMAdapter.h; sourceTree = "<group>"; };
+		0BBD84A12C801CBC005C7944 /* NAMAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NAMAdapter.m; sourceTree = "<group>"; };
+		0BBD84A32C801CBC005C7944 /* PangleAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PangleAdapter.h; sourceTree = "<group>"; };
+		0BBD84A42C801CBC005C7944 /* PangleAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PangleAdapter.m; sourceTree = "<group>"; };
+		0BBD84A62C801CBC005C7944 /* UnityAdsAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UnityAdsAdapter.h; sourceTree = "<group>"; };
+		0BBD84A72C801CBC005C7944 /* UnityAdsAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UnityAdsAdapter.m; sourceTree = "<group>"; };
+		0BBD84A92C801CBC005C7944 /* VungleAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VungleAdapter.h; sourceTree = "<group>"; };
+		0BBD84AA2C801CBC005C7944 /* VungleAdapter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VungleAdapter.m; sourceTree = "<group>"; };
 		140B937FDDB9B53EFEADC336 /* Pods-AdCashExampleTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdCashExampleTests.release.xcconfig"; path = "Target Support Files/Pods-AdCashExampleTests/Pods-AdCashExampleTests.release.xcconfig"; sourceTree = "<group>"; };
 		1F058E9BA727A042AAC81BD7 /* libPods-AdCashExample-AdCashExampleUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AdCashExample-AdCashExampleUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		2E50FB71322D4AF791626F2A /* Pods-AdCashExampleTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AdCashExampleTests.debug.xcconfig"; path = "Target Support Files/Pods-AdCashExampleTests/Pods-AdCashExampleTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -76,6 +115,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0BBD84B02C801CBC005C7944 /* Cauly.xcframework in Frameworks */,
 				BEDEC0973EEB4CB276608A5C /* libPods-AdCashExample.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -99,6 +139,144 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0BBD84852C801CBC005C7944 /* native sample view */ = {
+			isa = PBXGroup;
+			children = (
+				0BBD84842C801CBC005C7944 /* GADNativeAdView.xib */,
+			);
+			path = "native sample view";
+			sourceTree = "<group>";
+		};
+		0BBD84882C801CBC005C7944 /* admob */ = {
+			isa = PBXGroup;
+			children = (
+				0BBD84852C801CBC005C7944 /* native sample view */,
+				0BBD84862C801CBC005C7944 /* AdMobAdapter.h */,
+				0BBD84872C801CBC005C7944 /* AdMobAdapter.m */,
+			);
+			path = admob;
+			sourceTree = "<group>";
+		};
+		0BBD848B2C801CBC005C7944 /* applovin */ = {
+			isa = PBXGroup;
+			children = (
+				0BBD84892C801CBC005C7944 /* AppLovinAdapter.h */,
+				0BBD848A2C801CBC005C7944 /* AppLovinAdapter.m */,
+			);
+			path = applovin;
+			sourceTree = "<group>";
+		};
+		0BBD84922C801CBC005C7944 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				0BBD848C2C801CBC005C7944 /* Cauly.h */,
+				0BBD848D2C801CBC005C7944 /* CaulyAdSetting.h */,
+				0BBD848E2C801CBC005C7944 /* CaulyAdView.h */,
+				0BBD848F2C801CBC005C7944 /* CaulyInterstitialAd.h */,
+				0BBD84902C801CBC005C7944 /* CaulyNativeAd.h */,
+				0BBD84912C801CBC005C7944 /* CaulyNativeAdItem.h */,
+			);
+			path = include;
+			sourceTree = "<group>";
+		};
+		0BBD84942C801CBC005C7944 /* CaulyLib */ = {
+			isa = PBXGroup;
+			children = (
+				0BBD84922C801CBC005C7944 /* include */,
+				0BBD84932C801CBC005C7944 /* Cauly.xcframework */,
+			);
+			path = CaulyLib;
+			sourceTree = "<group>";
+		};
+		0BBD84972C801CBC005C7944 /* cauly */ = {
+			isa = PBXGroup;
+			children = (
+				0BBD84942C801CBC005C7944 /* CaulyLib */,
+				0BBD84952C801CBC005C7944 /* CaulyAdapter.h */,
+				0BBD84962C801CBC005C7944 /* CaulyAdapter.m */,
+			);
+			path = cauly;
+			sourceTree = "<group>";
+		};
+		0BBD849A2C801CBC005C7944 /* facebook */ = {
+			isa = PBXGroup;
+			children = (
+				0BBD84982C801CBC005C7944 /* FANAdapter.h */,
+				0BBD84992C801CBC005C7944 /* FANAdapter.m */,
+			);
+			path = facebook;
+			sourceTree = "<group>";
+		};
+		0BBD849D2C801CBC005C7944 /* mintegral */ = {
+			isa = PBXGroup;
+			children = (
+				0BBD849B2C801CBC005C7944 /* MintegralAdapter.h */,
+				0BBD849C2C801CBC005C7944 /* MintegralAdapter.m */,
+			);
+			path = mintegral;
+			sourceTree = "<group>";
+		};
+		0BBD849F2C801CBC005C7944 /* native sample view */ = {
+			isa = PBXGroup;
+			children = (
+				0BBD849E2C801CBC005C7944 /* GFPNativeSimpleAdView.xib */,
+			);
+			path = "native sample view";
+			sourceTree = "<group>";
+		};
+		0BBD84A22C801CBC005C7944 /* naverAdManager */ = {
+			isa = PBXGroup;
+			children = (
+				0BBD849F2C801CBC005C7944 /* native sample view */,
+				0BBD84A02C801CBC005C7944 /* NAMAdapter.h */,
+				0BBD84A12C801CBC005C7944 /* NAMAdapter.m */,
+			);
+			path = naverAdManager;
+			sourceTree = "<group>";
+		};
+		0BBD84A52C801CBC005C7944 /* pangle */ = {
+			isa = PBXGroup;
+			children = (
+				0BBD84A32C801CBC005C7944 /* PangleAdapter.h */,
+				0BBD84A42C801CBC005C7944 /* PangleAdapter.m */,
+			);
+			path = pangle;
+			sourceTree = "<group>";
+		};
+		0BBD84A82C801CBC005C7944 /* unityads */ = {
+			isa = PBXGroup;
+			children = (
+				0BBD84A62C801CBC005C7944 /* UnityAdsAdapter.h */,
+				0BBD84A72C801CBC005C7944 /* UnityAdsAdapter.m */,
+			);
+			path = unityads;
+			sourceTree = "<group>";
+		};
+		0BBD84AB2C801CBC005C7944 /* vungle */ = {
+			isa = PBXGroup;
+			children = (
+				0BBD84A92C801CBC005C7944 /* VungleAdapter.h */,
+				0BBD84AA2C801CBC005C7944 /* VungleAdapter.m */,
+			);
+			path = vungle;
+			sourceTree = "<group>";
+		};
+		0BBD84AC2C801CBC005C7944 /* Adapter */ = {
+			isa = PBXGroup;
+			children = (
+				0BBD84882C801CBC005C7944 /* admob */,
+				0BBD848B2C801CBC005C7944 /* applovin */,
+				0BBD84972C801CBC005C7944 /* cauly */,
+				0BBD849A2C801CBC005C7944 /* facebook */,
+				0BBD849D2C801CBC005C7944 /* mintegral */,
+				0BBD84A22C801CBC005C7944 /* naverAdManager */,
+				0BBD84A52C801CBC005C7944 /* pangle */,
+				0BBD84A82C801CBC005C7944 /* unityads */,
+				0BBD84AB2C801CBC005C7944 /* vungle */,
+			);
+			path = Adapter;
+			sourceTree = "<group>";
+		};
 		2EF46B3F84A1BB7C157B20E8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -147,6 +325,7 @@
 		BF55B5362AC17CA6000C0267 /* AdCashExample */ = {
 			isa = PBXGroup;
 			children = (
+				0BBD84AC2C801CBC005C7944 /* Adapter */,
 				BFF1485F2AC19B1F009A97D0 /* AdvertiseView */,
 				BF55B5372AC17CA6000C0267 /* AppDelegate.swift */,
 				BF55B5392AC17CA6000C0267 /* SceneDelegate.swift */,
@@ -299,8 +478,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				BF55B5442AC17CA8000C0267 /* LaunchScreen.storyboard in Resources */,
+				0BBD84B42C801CBD005C7944 /* GFPNativeSimpleAdView.xib in Resources */,
 				BF55B5412AC17CA8000C0267 /* Assets.xcassets in Resources */,
 				BF55B53F2AC17CA6000C0267 /* Main.storyboard in Resources */,
+				0BBD84AD2C801CBC005C7944 /* GADNativeAdView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -463,11 +644,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				BFF1486B2AC423E2009A97D0 /* BannerLoaderViewController.swift in Sources */,
+				0BBD84B72C801CBD005C7944 /* UnityAdsAdapter.m in Sources */,
+				0BBD84B32C801CBC005C7944 /* MintegralAdapter.m in Sources */,
 				BFF1486F2ACD18ED009A97D0 /* InterstitialAdViewController.swift in Sources */,
 				BF55B53C2AC17CA6000C0267 /* ViewController.swift in Sources */,
 				BFF1486D2AC43110009A97D0 /* NativeAdViewController.swift in Sources */,
 				BF55B5382AC17CA6000C0267 /* AppDelegate.swift in Sources */,
+				0BBD84B52C801CBD005C7944 /* NAMAdapter.m in Sources */,
+				0BBD84AF2C801CBC005C7944 /* AppLovinAdapter.m in Sources */,
+				0BBD84AE2C801CBC005C7944 /* AdMobAdapter.m in Sources */,
 				BFF148612AC19B3F009A97D0 /* BannerAdViewController.swift in Sources */,
+				0BBD84B62C801CBD005C7944 /* PangleAdapter.m in Sources */,
+				0BBD84B82C801CBD005C7944 /* VungleAdapter.m in Sources */,
+				0BBD84B22C801CBC005C7944 /* FANAdapter.m in Sources */,
+				0BBD84B12C801CBC005C7944 /* CaulyAdapter.m in Sources */,
 				BF55B53A2AC17CA6000C0267 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

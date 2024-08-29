@@ -6,7 +6,7 @@
 //
 
 import UIKit
-import AvatyeAdCash
+import AdCashFramework
 
 class NativeAdViewController: UIViewController{
     

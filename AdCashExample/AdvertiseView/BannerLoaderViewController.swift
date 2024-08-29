@@ -6,48 +6,55 @@
 //
 
 import UIKit
-import AvatyeAdCash
+import AdCashFramework
 
 class BannerLoaderViewController: UIViewController {
     
-    // MARK: BannerAdView 초기화
-    /// -- banner programatic --
-//    private lazy var bannerView: UIView = {
-//       let view = UIView()
-//        view.translatesAutoresizingMaskIntoConstraints = false
-//        return view
-//    }()
-    /// -- banner with storyboard --
-     @IBOutlet weak var bannerView: UIView!
+    @IBOutlet weak var bannerView: UIView!
+    let placementId: String = "477b6f40-3295-4984-abf8-be8e6cc06f10"
     
+    // MARK: BannerAdView
     var adLoader: BannerAdLoader! = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.backgroundColor = .white
         
+        // MARK: - BannerAdView 초기화
         // placementId와 size의 경우, 지면마다 값이 다름
-        adLoader = BannerAdLoader(rootVC: self, placementId: "1a652ca9-8fbb-4b64-b13c-af431319e549", size: .DYNAMIC)
+        adLoader = BannerAdLoader(rootVC: self, placementId: placementId, size: .DYNAMIC)
         adLoader.delegate = self
-        
+    }
+    
+    @IBAction func AdLoadBtnAction(_ sender: Any) {
         adLoader.requestAd()
     }
+    
+    @IBAction func AdRemoveBtnAction(_ sender: Any) {
+        adLoader.removeAd()
+    }
+    
+    
 }
 
 extension BannerLoaderViewController: BannerAdLoaderDelegate{
+    func onBannerRemoved(_ apid: String) {
+        print("BannerAdViewController >> onBannerRemoved(\(apid))")
+    }
+    
     func onBannerLoaded(_ apid: String, adView: UIView, size: CGSize) {
         print("BannerLoaderViewController >> onBannerLoaded(\(apid), ...)")
         // MARK: Layout 설정
         /// -- programatic --
-        self.view.addSubview(adView)
+        self.bannerView.addSubview(adView)
         
         adView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([
             // 광고 뷰(adView)의 크기를 광고크기와 같게 지정하고, 위치 지정
             adView.widthAnchor.constraint(equalToConstant: size.width),
             adView.heightAnchor.constraint(equalToConstant: size.height),
-            adView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
-            adView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor)
+            adView.centerXAnchor.constraint(equalTo: self.bannerView.centerXAnchor),
+            adView.centerYAnchor.constraint(equalTo: self.bannerView.centerYAnchor)
         ])
     }
     

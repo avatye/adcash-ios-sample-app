@@ -5,27 +5,31 @@
 //  Created by 박상준 on 2023/09/25.
 //
 
-import AvatyeAdCash
 import UIKit
+import AdCashFramework
 
 class BannerAdViewController: UIViewController {
-    // MARK: BannerAdView 초기화
+    
+    let placementId: String = "dbe834db-9c91-4f08-b32d-f4ee46808d51"
+    
+    // MARK: BannerAdView
     /// -- banner programatic --
-//    let bannerView: BannerAdView = {
-//        let ad = BannerAdView()
-//        ad.translatesAutoresizingMaskIntoConstraints = false
-//        return ad
-//    }()
+//    var bannerView: BannerAdView! = nil
     /// -- banner with storyboard --
     @IBOutlet weak var bannerView: BannerAdView!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.view.backgroundColor = .white
         
+        // MARK: - BannerAdView 초기화
         // placementId와 size의 경우, 지면마다 값이 다름
-        bannerView.setBannerAd(rootVC: self, placementId: "8e9315c6-f96f-442c-a15f-a0126b861f2e", size: .W320XH50)
-        bannerView.delegate = self
+        
+        /// -- programatic --
+//        self.bannerView = BannerAdView(frame: .zero)
+        
+        self.bannerView.setBannerAd(rootVC: self, placementId: self.placementId, size: .W320XH50)
+        self.bannerView.delegate = self
         
         // MARK: Layout 설정
         /// -- programatic --
@@ -33,25 +37,37 @@ class BannerAdViewController: UIViewController {
 //
 //        NSLayoutConstraint.activate([
 //            bannerView.heightAnchor.constraint(equalToConstant: 50),
-//            bannerView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
-//            bannerView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
-//            bannerView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
+//            bannerView.centerYAnchor.constraint(equalTo: self.view.centerYAnchor),
+//            bannerView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor),
+//            bannerView.widthAnchor.constraint(equalToConstant: 320)
 //        ])
         /// -- storyboard --
-        /// Dynamic Size의 경우, 가이드 참조 (https://avatye.readme.io/docs/adcash-ios-banner#dynamic-type%EC%9D%98-layout-%EA%B0%80%EC%9D%B4%EB%93%9C)
         bannerView.translatesAutoresizingMaskIntoConstraints = false
         
-        bannerView.removeAd()
+        
+        
+    }
+    
+    @IBAction func adLoadBtnAction(_ sender: Any) {
         // MARK: 광고 호출
         bannerView.requestAd()
     }
+    
+    @IBAction func adRemoveBtnAction(_ sender: Any) {
+        bannerView.removeAd()
+    }
+    
+    
 }
 
 // MARK: Delegation
 extension BannerAdViewController: BannerAdWidgetDelegate {
+    func onBannerRemoved(_ apid: String) {
+        print("BannerAdViewController >> onBannerRemoved(\(apid))")
+    }
+    
     func onBannerLoaded(_ apid: String) {
         print("BannerAdViewController >> onBannerLoaded(\(apid))")
-        self.view.bringSubviewToFront(bannerView)
     }
     
     func onBannerFailed(_ apid: String, error: AdCashErrorModel) {

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22154" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yjG-or-B7d">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="yjG-or-B7d">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22130"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22685"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -129,7 +129,7 @@
                                                 <state key="normal" title="Button"/>
                                                 <buttonConfiguration key="configuration" style="filled" title="Open"/>
                                                 <connections>
-                                                    <segue destination="r12-cS-RUz" kind="show" id="tjK-pY-DEc"/>
+                                                    <action selector="nativeAdBtnAction:" destination="a8w-Rb-TYi" eventType="touchUpInside" id="21d-D5-akb"/>
                                                 </connections>
                                             </button>
                                         </subviews>
@@ -183,15 +183,26 @@
                                 </subviews>
                                 <viewLayoutGuide key="safeArea" id="8Te-xh-by9"/>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2qC-YU-7n4">
+                                <rect key="frame" x="187.5" y="567" width="0.0" height="0.0"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FoQ-Lu-Xb7"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
+                            <constraint firstItem="2qC-YU-7n4" firstAttribute="centerX" secondItem="eyw-pS-xei" secondAttribute="centerX" id="Lv9-fi-y2K"/>
+                            <constraint firstAttribute="bottom" secondItem="2qC-YU-7n4" secondAttribute="bottom" constant="100" id="Zue-Lu-d4S"/>
                             <constraint firstItem="XXl-gE-Yci" firstAttribute="centerY" secondItem="eyw-pS-xei" secondAttribute="centerY" id="pSS-of-gnq"/>
                             <constraint firstItem="XXl-gE-Yci" firstAttribute="centerX" secondItem="eyw-pS-xei" secondAttribute="centerX" id="sgC-f7-hyP"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="tKZ-BX-cZL"/>
+                    <connections>
+                        <outlet property="warningLabel" destination="2qC-YU-7n4" id="rJe-e8-Mc3"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="b9w-IY-oPs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -208,7 +219,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="R9g-Bo-X1a" userLabel="Container View">
                                 <rect key="frame" x="12.5" y="258.5" width="350" height="150"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdg-E5-WqF" customClass="BannerAdView" customModule="AvatyeAdCash">
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bdg-E5-WqF" customClass="BannerAdView">
                                         <rect key="frame" x="15" y="50" width="320" height="50"/>
                                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                         <constraints>
@@ -217,7 +228,7 @@
                                         </constraints>
                                     </view>
                                 </subviews>
-                                <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstItem="bdg-E5-WqF" firstAttribute="centerX" secondItem="R9g-Bo-X1a" secondAttribute="centerX" id="3vL-7y-GtX"/>
                                     <constraint firstItem="bdg-E5-WqF" firstAttribute="centerY" secondItem="R9g-Bo-X1a" secondAttribute="centerY" id="EhU-Sh-UeI"/>
@@ -225,17 +236,37 @@
                                     <constraint firstAttribute="height" constant="150" id="aHx-rc-LH8"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0DB-Ur-ibg">
+                                <rect key="frame" x="212" y="173.5" width="113" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="AD Remove"/>
+                                <connections>
+                                    <action selector="adRemoveBtnAction:" destination="27o-L4-aTR" eventType="touchUpInside" id="5DF-Tq-Pfc"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PDh-QS-0rK">
+                                <rect key="frame" x="50" y="173.5" width="89" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="AD Load"/>
+                                <connections>
+                                    <action selector="adLoadBtnAction:" destination="27o-L4-aTR" eventType="touchUpInside" id="eY3-SK-Vto"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="yaO-ei-aE8"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="yaO-ei-aE8" firstAttribute="trailing" secondItem="0DB-Ur-ibg" secondAttribute="trailing" constant="50" id="VGA-iu-7dk"/>
+                            <constraint firstItem="0DB-Ur-ibg" firstAttribute="centerY" secondItem="PDh-QS-0rK" secondAttribute="centerY" id="agb-Fq-gD8"/>
                             <constraint firstItem="R9g-Bo-X1a" firstAttribute="centerX" secondItem="yaO-ei-aE8" secondAttribute="centerX" id="hqs-FL-kE1"/>
+                            <constraint firstItem="R9g-Bo-X1a" firstAttribute="top" secondItem="PDh-QS-0rK" secondAttribute="bottom" constant="50" id="n7e-sb-GNS"/>
+                            <constraint firstItem="PDh-QS-0rK" firstAttribute="leading" secondItem="yaO-ei-aE8" secondAttribute="leading" constant="50" id="sF6-1G-jj4"/>
                             <constraint firstItem="R9g-Bo-X1a" firstAttribute="centerY" secondItem="br2-gm-FEr" secondAttribute="centerY" id="sa2-su-Dc8"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="BOp-ZZ-REB"/>
                     <connections>
-                        <outlet property="bannerView" destination="bdg-E5-WqF" id="tEz-uL-K24"/>
+                        <outlet property="bannerView" destination="bdg-E5-WqF" id="68c-pK-QYq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aeT-Eb-0u5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -251,10 +282,10 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gSh-1c-hck" userLabel="NativeAdContainer" customClass="AdCashDefault" customModule="AvatyeAdCash">
-                                <rect key="frame" x="26" y="74" width="323" height="335"/>
+                                <rect key="frame" x="26" y="30" width="323" height="379"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GU4-Vi-yLx" userLabel="NativeAdAdaptor" customClass="AdPopAdapter" customModule="AvatyeAdCash">
-                                        <rect key="frame" x="10" y="10" width="303" height="315"/>
+                                        <rect key="frame" x="10" y="10" width="303" height="359"/>
                                         <subviews>
                                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Yme-eB-BFi" userLabel="icon">
                                                 <rect key="frame" x="10" y="10" width="50" height="50"/>
@@ -336,8 +367,22 @@
                     <view key="view" contentMode="scaleToFill" id="Euk-GW-bgw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1R6-ak-3x2">
+                                <rect key="frame" x="156.5" y="316" width="62" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Load"/>
+                                <connections>
+                                    <action selector="loadBtnAction:" destination="Lga-wf-0b5" eventType="touchUpInside" id="cEX-St-IKM"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="s0h-op-bSc"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="1R6-ak-3x2" firstAttribute="centerX" secondItem="Euk-GW-bgw" secondAttribute="centerX" id="dpX-48-LoM"/>
+                            <constraint firstItem="1R6-ak-3x2" firstAttribute="centerY" secondItem="Euk-GW-bgw" secondAttribute="centerY" id="tCf-gQ-Wx8"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hn8-YE-OBx"/>
                 </viewController>
@@ -355,23 +400,43 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yo2-3N-qlD">
                                 <rect key="frame" x="12.5" y="183.5" width="350" height="300"/>
-                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <color key="backgroundColor" systemColor="systemGray6Color"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="350" id="906-eS-Eyx"/>
                                     <constraint firstAttribute="height" constant="300" id="efY-F2-6nP"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VQg-dv-nj3">
+                                <rect key="frame" x="50" y="118.5" width="87" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Ad Load"/>
+                                <connections>
+                                    <action selector="AdLoadBtnAction:" destination="QNP-hy-rCd" eventType="touchUpInside" id="eLb-9l-sQG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rn0-7R-XdW">
+                                <rect key="frame" x="215" y="118.5" width="110" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Ad Remove"/>
+                                <connections>
+                                    <action selector="AdRemoveBtnAction:" destination="QNP-hy-rCd" eventType="touchUpInside" id="bTF-tA-6uh"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Hgf-eg-BRo"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="Yo2-3N-qlD" firstAttribute="top" secondItem="VQg-dv-nj3" secondAttribute="bottom" constant="30" id="2Hb-hm-PLl"/>
+                            <constraint firstItem="Hgf-eg-BRo" firstAttribute="trailing" secondItem="Rn0-7R-XdW" secondAttribute="trailing" constant="50" id="6Rq-wU-UNG"/>
                             <constraint firstItem="Yo2-3N-qlD" firstAttribute="centerX" secondItem="Hgf-eg-BRo" secondAttribute="centerX" id="8dE-FH-rSy"/>
                             <constraint firstItem="Yo2-3N-qlD" firstAttribute="centerY" secondItem="LHx-VX-rv1" secondAttribute="centerY" id="NOF-fP-1n5"/>
+                            <constraint firstItem="Rn0-7R-XdW" firstAttribute="centerY" secondItem="VQg-dv-nj3" secondAttribute="centerY" id="Vk4-4k-SjS"/>
+                            <constraint firstItem="VQg-dv-nj3" firstAttribute="leading" secondItem="Hgf-eg-BRo" secondAttribute="leading" constant="50" id="dgE-eF-2KT"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="KZx-oK-nsj"/>
                     <connections>
-                        <outlet property="bannerView" destination="Yo2-3N-qlD" id="mqL-BU-l8Y"/>
+                        <outlet property="bannerView" destination="Yo2-3N-qlD" id="rpI-pa-Iin"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TTr-xD-k0P" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -382,6 +447,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

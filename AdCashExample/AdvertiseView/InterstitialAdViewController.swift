@@ -6,22 +6,27 @@
 //
 
 import UIKit
-import AvatyeAdCash
+import AdCashFramework
 
 class InterstitialAdViewController: UIViewController {
+    let placementID: String = "759c863a-6662-498d-a478-d16cbe79d38e"
+    
     private var interAdView: InterstitialAdLoader! = nil
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.interAdView = InterstitialAdLoader(placementId: "6025eb28-3283-4689-8fbc-3fb7a6fe8ed1")
-        
-        addChild(self.interAdView)
+        self.interAdView = InterstitialAdLoader(placementId: placementID, rootViewController: self)
         
         self.interAdView.delegate = self
-        
+    }
+    
+    @IBAction func loadBtnAction(_ sender: Any) {
+        print("123312312123")
         self.interAdView.requestAd()
     }
+    
+    
 }
 
 extension InterstitialAdViewController: InterstitialAdDelegate{
