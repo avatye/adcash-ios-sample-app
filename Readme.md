@@ -1,10 +1,10 @@
 # AdCash iOS Sample project
-**AdCash(iOS) v1.1.1 기준으로 작성되었습니다.**   
+**AdCash(iOS) v3.1.12 기준으로 작성되었습니다.**   
 AdCash(iOS) 연동을 위한 샘플 프로젝트 입니다.   
 샘플코드에 사용된 코드에 대한 자세한 내용은 연동가이드를 참고해주세요.   
 
 ## 개발환경
-- iOS 11.0
+- iOS 13.0
 - Xcode 14.3
 - Apple Silicon M2
 
